@@ -1,0 +1,351 @@
+.s-grName {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 20px 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    width: 90%; /* Изменено на процентное значение */
+    margin-left: auto; /* Добавлены автоматические маргины для центрирования */
+    margin-right: auto;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkPinBlockHide {
+    display: none;
+}
+
+
+.checkPinBlock {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 350px;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 20px;
+
+   
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+
+    &-input {
+        width: 300px;
+        border: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin-top: 50px;
+        margin-left: 100px;
+        text-align: center;
+        padding: 10px 20px;
+        outline: none;
+        font-weight: 800;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    .deleteBtn {
+        background-color: red;
+        width: 200px;
+        padding: 20px 30px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        border-radius: 20px;
+        margin-left: 150px;
+        cursor: pointer;
+    }
+
+
+    .deleteBtn:hover {
+        background-color: rgb(106, 1, 1);
+    }
+    
+    .closeDeleteBlock {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+
+}
+
+.deleteIcon {
+    position: absolute;
+    left: -50px;
+    color: red;
+    cursor: pointer;
+}
+
+.task {
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+
+    .task-discipline {
+        width: 370px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        padding: 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .task-discipline:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .task-date {
+        padding: 10px;
+        margin-left: 20px;
+        border-right:none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        padding: 10px;
+    }
+
+    .task-date:hover {
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+    }
+    .task-author {
+        padding: 10px;
+        border-radius: 10PX;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        margin-left: 20px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        background-color: #fff;
+        color: black;
+    }
+
+    .task-author:hover {
+        color: white;
+        background-color: black;
+    }
+    .task-comments {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        width: 480px;
+        border-radius: 10px;
+        position: absolute;
+        align-items: center;
+        top: -10px;
+        right: -20px ;
+        padding: 15px;
+        font-size: 13px;
+        font-weight: 600;
+        overflow: hidden; /* Обрежет содержимое, которое выходит за пределы ячейки */
+        transition: all 0.3s ease;
+        cursor: pointer;
+        background-color: #fff;
+        color: black;
+    }
+    .task-comments:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .loading-single {
+        margin-left: 600px;
+        margin-top: 100px;
+    }
+}
+
+.tHead {
+    display: flex;
+    margin-top: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .s-grName {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 30px;
+        padding: 20px 30px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        width: 90%; /* Изменено на процентное значение */
+        margin-left: auto; /* Добавлены автоматические маргины для центрирования */
+        margin-right: auto;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .task {
+        display: block;
+        position: relative;
+        margin-top: 50px;
+        border-bottom: none;
+        padding-bottom: 0px;
+        width: 300px;
+        height: 300px;
+        margin-left: 10px;
+        padding-top: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        border-radius: 10px;
+
+        .task-discipline {
+            width: 280px;
+            box-shadow: none;
+            padding: 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            text-align: center;
+        }
+    
+        .task-date {
+            padding: 10px;
+            margin-left: 0px;
+            border-right:1px solid black ;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+            color: black;
+        }
+    
+        .task-author {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0PX;
+            margin-left: 0px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            color: black;
+            box-shadow: none;
+            font-weight: 600;
+        }
+    
+        .task-comments {
+            width: 300px;
+            border-radius: 0px;
+            font-style: italic;
+            position: static;
+            align-items: center;
+            top: -50px;
+            right: -20px ;
+            padding: 15px;
+            font-size: 13px;
+            font-weight: 600;
+            overflow: hidden; /* Обрежет содержимое, которое выходит за пределы ячейки */
+            transition: all 0.3s ease;
+            cursor: pointer;
+            color: black;
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: none;
+        }
+    }
+    
+    .tHead {
+        display: none;
+    }
+
+    .deleteBtn {
+        background-color: red;
+        width: 200px;
+        padding: 20px 30px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        border-radius: 20px;
+        margin-left: 150px;
+        cursor: pointer;
+    }
+
+    .deleteIcon {
+        position: absolute;
+        top: 5px;
+        left: 10px;
+        color: red;
+        cursor: pointer;
+    }
+
+    .checkPinBlock {
+        width: 300px;
+        height: 300px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        margin-left: 10px;
+        z-index: 2;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+        border-radius: 20px;
+    
+       
+    
+        p {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+    
+        &-input {
+            width: 250px;
+            border: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin-top: 50px;
+            margin-left: 25px;
+            text-align: center;
+            padding: 10px 20px;
+            outline: none;
+            font-weight: 800;
+            letter-spacing: 2px;
+            font-size: 15px;
+        }
+    
+        .deleteBtn {
+            background-color: red;
+            width: 200px;
+            padding: 20px 30px;
+            color: white;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            border-radius: 20px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+    
+    
+        .deleteBtn:hover {
+            background-color: rgb(106, 1, 1);
+        }
+        
+        .closeDeleteBlock {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    
+    
+    }
+
+    .loading-single {
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+}

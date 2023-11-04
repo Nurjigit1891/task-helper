@@ -1,0 +1,41 @@
+.fav-text-1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.fv-groups {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding-left: 50px;
+
+    .gr {
+        width: 300px;
+        height: 300px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        transition: all 0.3s ease ;
+        .gr-name {
+            font-weight: 700;
+            font-size: 30px;
+            user-select: none;
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .gr:hover {
+        background-color: black;
+        transform: translateY(-5px);
+    }
+    .gr:hover .gr-name {
+        color: white;
+    }
+}

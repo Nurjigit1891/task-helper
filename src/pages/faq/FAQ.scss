@@ -1,0 +1,23 @@
+.faq-text-1 {
+    text-align: center;   
+    margin-top: 40px;
+}
+
+.socialMedia {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+
+    .faq-icon {
+        font-size: 100px;
+        color: black;
+        transition: all 0.4s ease;
+    }
+
+    .telegram:hover {
+        color: rgb(0, 118, 208);
+    }
+    .wa:hover {
+        color: rgb(3, 135, 3);
+    }
+}
